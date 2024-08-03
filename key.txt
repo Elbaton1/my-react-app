@@ -1,0 +1,5 @@
+sk-proj-nC63zqp88NYDUiVF8XhfT3BlbkFJct66hda8cehoC4GJy79Q
+
+<img src={animation2} alt="Header Animation" className="header-animation" />
+
+import animation2 from '../assets/animation2.gif';
