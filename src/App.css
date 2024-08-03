@@ -136,12 +136,12 @@ body {
 .card h3 {
   margin-top: 0;
   color: #333;
-  font-size: 1.3em; /* Reduced font size */
+  font-size: 1.5em;
 }
 
 .card p {
   color: #666;
-  font-size: 1em; /* Reduced font size */
+  font-size: 1.1em;
 }
 
 /* Footer */
@@ -151,7 +151,7 @@ body {
   color: white;
   text-align: center;
   margin-top: auto;
-  animation: fade in 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
   display: none;
 }
 
@@ -247,7 +247,8 @@ body {
 
 .uses-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 20px;
 }
 
@@ -265,16 +266,13 @@ body {
 .use-case p {
   margin-left: 10px;
   color: #333;
-  flex: 1;
 }
 
 .use-icon {
   font-size: 2em;
   color: #3066be;
-  margin-right: 10px;
 }
 
-/* AI-Assisted Search */
 .ai-assisted-search {
   display: flex;
   flex-direction: column;
@@ -293,30 +291,60 @@ body {
   margin-bottom: 20px;
 }
 
-/* For Mobile */
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Media Queries for Mobile */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 2.5em;
+  .uses-container {
+    flex-direction: column;
+    align-items: center;
   }
-  .header p {
-    font-size: 1.3em;
+
+  .use-case {
+    width: 90%;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .section-heading {
-    font-size: 2em;
+
+  .use-case p {
+    margin-left: 0;
+    margin-top: 10px;
   }
-  .card h3, .card p {
-    font-size: 0.9em;
+
+  .future-capabilities {
+    display: flex;
+    flex-direction: column;
   }
-  .guided-search h3 {
+
+  .future-capabilities div {
+    order: 1;
+  }
+
+  .future-capabilities img {
+    order: 2;
+    width: 100%;
+  }
+
+  .introduction,
+  .uses,
+  .ai-assisted-search {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card h3 {
     font-size: 1.2em;
   }
-  .guided-search input {
-    width: 100%;
-  }
-  .guided-search button {
-    width: 100%;
+
+  .card p {
+    font-size: 0.9em;
   }
 }
+
 
 
 
