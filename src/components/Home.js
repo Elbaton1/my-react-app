@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className="container">
             <nav className="navbar">
-           
+                {/* Add your navbar content here if any */}
             </nav>
             <section className="introduction">
                 <div>
@@ -18,11 +18,8 @@ const Home = () => {
                         Whether you are a researcher, inventor, or legal professional, our system is designed to provide 
                         comprehensive and actionable insights into patent data. Utilize advanced AI algorithms to conduct thorough patent searches, analyze patent abstracts, and detect potential challenges in your applications. Our platform offers practical suggestions for overcoming obstacles, helping you to navigate the complex landscape of intellectual property.
                         Experience the efficiency of AI-driven insights, guiding you towards new opportunities and enhancing your research and development efforts.
-
                     </p>
-                    
                 </div>
-                
                 <img src={image1} alt="AI-powered patent analysis" className="intro-image" />
             </section>
             <h2 id="capabilities" className="section-heading">Our Goals</h2>
@@ -68,7 +65,7 @@ const Home = () => {
                         <li>Integrate with extensive legal databases to perform detailed legal analyses, ensuring your patents are robust and legally sound.</li>
                     </ul>
                 </div>
-                <img src={animation3} alt="Future capabilities" className="info-image" />
+                <img src={animation3} alt="Future capabilities" className="info-image animation3" />
             </section>
             <section className="uses">
                 <div className="uses-heading">
@@ -105,6 +102,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
