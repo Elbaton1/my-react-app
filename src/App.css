@@ -90,11 +90,12 @@ body {
   margin-bottom: 20px;
 }
 
+/* Animation3 */
 .animation3 {
   width: 100px;
   height: 100px;
-  margin-bottom: 20px;
-  display: block; /* Ensure it shows up */
+  display: block;
+  margin: 20px auto; /* Center the image horizontally */
 }
 
 /* Container */
@@ -402,19 +403,7 @@ body {
     height: 80px;
   }
 
-  .animation3 {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    display: block !important; /* Ensure it shows up */
-    visibility: visible !important; /* Ensure it is not hidden */
-    opacity: 1 !important; /* Ensure it is fully opaque */
-  }
-  
 
-  .container {
-    padding: 20px;
-  }
 
   .section-heading {
     font-size: 2em;
@@ -480,6 +469,58 @@ body {
     display: none !important; /* Ensure footer remains invisible */
   }
 }
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .uses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .use-case {
+    width: 90%;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .use-case p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .future-capabilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .future-capabilities div {
+    order: 1;
+  }
+
+  .future-capabilities img {
+    order: 2;
+    width: 100%;
+  }
+
+  .introduction,
+  .uses,
+  .ai-assisted-search {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+}
+
+
 
 
 
