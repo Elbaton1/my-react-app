@@ -403,10 +403,14 @@ body {
   }
 
   .animation3 {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
     display: block !important; /* Ensure it shows up */
+    visibility: visible !important; /* Ensure it is not hidden */
+    opacity: 1 !important; /* Ensure it is fully opaque */
   }
+  
 
   .container {
     padding: 20px;
