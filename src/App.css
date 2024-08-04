@@ -90,6 +90,12 @@ body {
   margin-bottom: 20px;
 }
 
+.animation3 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
 /* Container */
 .container {
   max-width: 1200px;
@@ -174,7 +180,7 @@ body {
   text-align: center;
   margin-top: auto;
   animation: fade in 1s ease-in-out;
-  display: none;
+  display: none; /* Hide the footer */
 }
 
 .footer p {
@@ -323,7 +329,7 @@ body {
   0% {
       transform: translateY(0);
   }
-  50% {
+   50% {
       transform: translateY(-10px);
   }
   100% {
@@ -376,6 +382,7 @@ body {
   .header {
     height: auto;
     padding: 20px;
+    min-height: 900px; /* Made header longer */
   }
 
   .header-content {
@@ -393,6 +400,12 @@ body {
   .search-animation {
     width: 80px;
     height: 80px;
+  }
+
+  .animation3 {
+    width: 80px;
+    height: 80px;
+    display: block; /* Ensure it shows up */
   }
 
   .container {
@@ -460,9 +473,10 @@ body {
   }
 
   .footer {
-    display: block;
+    display: none; /* Ensure footer remains invisible */
   }
 }
+
 
 
 
