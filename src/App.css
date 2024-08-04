@@ -3,9 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #ffffff 0%, #f8d7da 40%, #dc3545 80%, #000000 100%);
+  background: linear-gradient(120deg, #000000 0%, #ffffff 40%, #ff0019 80%, #000000 100%);
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 23s ease infinite;
   color: #000000;
   transition: background-color 0.5s ease;
 }
@@ -382,9 +382,9 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #ffffff 0%, #dad1d2 40%, #dc3545 80%, #000000 100%);
+    background: linear-gradient(120deg, #000000 0%, #ffffff 40%, #ff0019 80%, #000000 100%);
     background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
+    animation: gradient 23s ease infinite;
     color: #000000;
     transition: background-color 0.5s ease;
   }
