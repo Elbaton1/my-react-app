@@ -1,5 +1,5 @@
 import React from 'react';
-import animation1 from '../assets/animation1.gif'; // Ensure this path is correct
+import { FaCode, FaLaptopCode, FaServer } from 'react-icons/fa'; // Importing necessary icons
 import '../App.css';
 
 const Header = () => {
@@ -7,19 +7,29 @@ const Header = () => {
         <header className="header">
             <nav className="navbar">
                 <ul className="nav-links">
-                    <li><a href="#capabilities">Our Capabilities</a></li>
+                    <center><li><a href="#capabilities">Our Capabilities</a></li></center>
                 </ul>
             </nav>
             <div className="header-content">
                 <h1>Patent Due Diligence AI</h1>
                 <p>Gone are the days of spending weeks on diligence. AI provides comprehensive results before you're done reading the abstract.</p>
-                <img src={animation1} alt="Search Animation" className="search-animation" />
+                <div className="icon-container">
+                    <FaCode className="header-icon" />
+                    <FaLaptopCode className="header-icon" />
+                    <FaServer className="header-icon" />
+                </div>
             </div>
         </header>
     );
 };
 
 export default Header;
+
+
+
+
+
+
 
 
 
