@@ -94,6 +94,7 @@ body {
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
+  display: block; /* Ensure it shows up */
 }
 
 /* Container */
@@ -200,7 +201,6 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: #f8d7da;
-  
 }
 
 .introduction h2,
@@ -329,7 +329,7 @@ body {
   0% {
       transform: translateY(0);
   }
-   50% {
+  50% {
       transform: translateY(-10px);
   }
   100% {
@@ -405,7 +405,7 @@ body {
   .animation3 {
     width: 80px;
     height: 80px;
-    display: block; /* Ensure it shows up */
+    display: block !important; /* Ensure it shows up */
   }
 
   .container {
@@ -473,9 +473,10 @@ body {
   }
 
   .footer {
-    display: none; /* Ensure footer remains invisible */
+    display: none !important; /* Ensure footer remains invisible */
   }
 }
+
 
 
 
